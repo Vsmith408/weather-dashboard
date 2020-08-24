@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <h1> Weather Dashboard</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 search">
+                <h5>Search for a City:</h5>
+                <div class="input-group mb-3">
+                    <input id="searchInput" type="text" class="form-control" aria-label="search for city">
+                    <div class="input-group-append">
+                        <button id="searchBtn" class="btn btn-primary" type="button"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div>
+                    <ul id="list" class="list-group">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9 dash">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 id='city'>Search a City </h4>
+                        <p id='temp'></p>
+                        <p id='humidity'></p>
+                        <p id='wind'></p>
+                        <!-- <p id='uv'></p> -->
+                    </div>
+                </div>
+
+                <h4> 5-Day Forcast:</h4>
+                <div id="forecastList" class="row">
+                    <div class="col">
+                        <h5>Search a City</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
